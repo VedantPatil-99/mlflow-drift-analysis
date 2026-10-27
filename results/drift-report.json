@@ -1,0 +1,40 @@
+{
+  "dataset": "Galaxy Frog Retrieval Telemetry (synthetic academic sample)",
+  "seed": 49,
+  "records": {
+    "reference": 100,
+    "current": 100
+  },
+  "method": "Population Stability Index (PSI)",
+  "psi_bins": 10,
+  "significant_drift_threshold": 0.25,
+  "psi_by_feature": {
+    "query_length_tokens": 2.424,
+    "top1_score": 3.3085,
+    "response_latency_ms": 4.531,
+    "evidence_count": 1.138
+  },
+  "significant_drift_features": [
+    "query_length_tokens",
+    "top1_score",
+    "response_latency_ms",
+    "evidence_count"
+  ],
+  "reference_summary": {
+    "query_length_tokens_mean": 14.66,
+    "top1_score_mean": 0.7736,
+    "response_latency_ms_mean": 825.8192,
+    "evidence_count_mean": 4.22,
+    "fallback_rate": 0.06,
+    "grounded_result_rate": 0.94
+  },
+  "current_summary": {
+    "query_length_tokens_mean": 22.44,
+    "top1_score_mean": 0.6308,
+    "response_latency_ms_mean": 1242.1192,
+    "evidence_count_mean": 3.07,
+    "fallback_rate": 0.31,
+    "grounded_result_rate": 0.35
+  },
+  "overall_drift_detected": true
+}
